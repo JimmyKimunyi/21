@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.static("dist"));
 
 const errorHandler = (error, req, res, next) => {
-  console.log.log(error);
+  console.log(error);
   next(error);
   return;
 };
